@@ -4,16 +4,56 @@ body {
     color: #434455;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 a {
     text-decoration: none;
+    color: currentColor;
 }
 
 ul {
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+.container {
+    width: 1158px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
 }
 
 /*--------HEADER-------*/
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-nav {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
 .header-logo {
     color: #4d5ae5;
     font-family: "Raleway", sans-serif;
@@ -22,6 +62,8 @@ ul {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: flex;
+    margin-right: 76px;
 }
 
 .logo-header-span {
@@ -32,6 +74,11 @@ ul {
     line-height: 1.16;
     letter-spacing: -0.03em;
     text-transform: uppercase;
+}
+
+.header-menu-item {
+display: flex;
+gap: 40px;
 }
 
 .header-menu-link {
@@ -52,6 +99,11 @@ ul {
 
 .header-menu-link:focus {
     color: #404bbf;
+}
+
+.header-cont-list {
+display: flex;
+gap: 40px;
 }
 
 .header-contacts {
@@ -90,8 +142,10 @@ ul {
 
 /*-----SECTION 1-----*/
 .hero {
-    background: var(--NAVY-BLUE, #2E2F42);
+    background-color: var(--NAVY-BLUE, #2E2F42);
+    padding: 188px 472px 292px 472px;
 }
+
 
 .hero-title {
     color: var(--WHITE, #FFF);
@@ -100,6 +154,8 @@ ul {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    margin-bottom: 48px;
+    max-width: 496px;
 }
 
 .hero-button-service {
@@ -111,6 +167,14 @@ ul {
     letter-spacing: 0.04em;
     cursor: pointer;
     background: var(--IRIS, #4D5AE5);
+    display: inline-flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    background: var(--IRIS, #4D5AE5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
 }
 
 .hero-button-service:hover {
@@ -123,12 +187,23 @@ ul {
 /*--------------------*/
 
 /*-----SECTION 2-----*/
+.facilities-container{
+    padding: 120px 156px;
+}
+
+.facilities-list {
+    display: flex;
+    gap: 24px;
+}
+
+
 .facilities-titel{
     color: var(--NAVY-BLUE, #2E2F42);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .facilities-paragraph {
@@ -137,6 +212,7 @@ ul {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: calc((100% - 24 * 3) /4);
 }
 /*--------------------*/
 
@@ -153,10 +229,22 @@ ul {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
 
 .team-list {
-    background-color: #FFFFFF
+    display: flex;
+    border-bottom: ;
+    border-radius: 0px 0px 4px 4px;
+    background: var(--WHITE, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    gap: 24px;
+}
+
+.team-list-item {
+    background-color: #FFFFFF;
+    padding-top: 72px;
 }
 
 .team-members-names {
@@ -166,6 +254,7 @@ ul {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    padding-top: 32px;
 }
 
 .team-members-jobs {
@@ -175,6 +264,8 @@ ul {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 8px;
+    padding-bottom: 32px;
 }
 /*--------------------*/
 
@@ -187,6 +278,14 @@ ul {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    padding-top: 120px;
+    padding-bottom: 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
 .portfolio-items-title {
@@ -195,6 +294,14 @@ ul {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 8px;
+}
+
+.portfolio-img {
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+    background: var(--WHITE, #FFF);
+ 
 }
 
 .cards-content {
@@ -203,6 +310,7 @@ ul {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-bottom: 32px;
 }
 /*--------------------*/
 
