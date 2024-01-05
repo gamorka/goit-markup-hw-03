@@ -41,6 +41,7 @@ address {
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc
 }
 
 .header-nav {
@@ -87,6 +88,7 @@ gap: 40px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .header-menu-link:hover {
@@ -175,6 +177,9 @@ gap: 40px;
     background: var(--IRIS, #4D5AE5);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
+    min-width: 169px;
+    margin: 0 auto;
+    display: block;
 }
 
 .hero-button-service:hover {
@@ -187,8 +192,22 @@ gap: 40px;
 /*--------------------*/
 
 /*-----SECTION 2-----*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .facilities-container{
-    padding: 120px 156px;
+    padding: 120px 0
 }
 
 .facilities-list {
@@ -212,13 +231,14 @@ gap: 40px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    width: calc((100% - 24 * 3) /4);
+    width: calc((100% - 72px) / 4);
 }
 /*--------------------*/
 
 /*-----SECTION 3-----*/
 .hero-team-list {
     background: var(--CLOUD, #F4F4FD);
+    padding: 120px 0
 }
 
 .team-title {
@@ -229,8 +249,7 @@ gap: 40px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .team-list {
@@ -240,6 +259,10 @@ gap: 40px;
     background: var(--WHITE, #FFF);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     gap: 24px;
+}
+
+.team-img {
+    display: block;
 }
 
 .team-list-item {
@@ -299,6 +322,7 @@ gap: 40px;
 }
 
 .portfolio-img {
+    display: block;
     border: 1px solid var(--CORNFLOWER, #E7E9FC);
     background: var(--WHITE, #FFF);
  
