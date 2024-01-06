@@ -347,6 +347,12 @@ gap: 40px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.container-footer {
+    padding: 100px 0;
 }
 
 .logo-footer-span {
@@ -361,6 +367,7 @@ gap: 40px;
 
 .footer-paragraph {
     color: var(--CLOUD, #F4F4FD);
+    font-family: 'Roboto';
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
