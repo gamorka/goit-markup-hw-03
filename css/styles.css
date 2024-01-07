@@ -145,9 +145,8 @@ gap: 40px;
 /*-----SECTION 1-----*/
 .hero {
     background-color: var(--NAVY-BLUE, #2E2F42);
-    padding: 188px 472px 292px 472px;
+    padding: 188px 0;
 }
-
 
 .hero-title {
     color: var(--WHITE, #FFF);
@@ -192,6 +191,10 @@ gap: 40px;
 /*--------------------*/
 
 /*-----SECTION 2-----*/
+.hero {
+    padding: 120px 0;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -206,8 +209,8 @@ gap: 40px;
     overflow: hidden;
 }
 
-.facilities-container{
-    padding: 120px 0
+.facilities-container {
+    padding: 120px 0;
 }
 
 .facilities-list {
@@ -215,8 +218,11 @@ gap: 40px;
     gap: 24px;
 }
 
+.facilities-list-items {
+    width: calc((100% - 72px) / 4);
+}
 
-.facilities-titel{
+.facilities-titel {
     color: var(--NAVY-BLUE, #2E2F42);
     font-size: 20px;
     font-weight: 500;
@@ -231,7 +237,6 @@ gap: 40px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    width: calc((100% - 72px) / 4);
 }
 /*--------------------*/
 
@@ -336,7 +341,7 @@ gap: 40px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     padding-top: 32px;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .portfolio-list-items {
