@@ -191,6 +191,11 @@ gap: 40px;
 /*--------------------*/
 
 /*-----SECTION 2-----*/
+
+.hero {
+    padding: 120px 0;
+}
+
 .hero-team-list {
     padding: 120px 0;
 }
